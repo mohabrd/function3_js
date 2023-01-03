@@ -32,13 +32,27 @@
 
 //EXO4
 
-function nombreentrer(num) {
-    let sommenbr = 0;
-    let str = num.toString();
-    for (let i = 0; i < str.length; i++) {
-      sommenbr += parseInt(str[i]);
+// function nombreentrer(num) {
+//     let sommenbr = 0;
+//     let str = num.toString();
+//     for (let i = 0; i < str.length; i++) {
+//       sommenbr += parseInt(str[i]);
+//     }
+//     return sommenbr;
+//   }
+
+// console.log(nombreentrer(123));
+
+//EXO5
+
+function palindrome(array) {
+    for (let i = 0; i < array.length / 2; i++) {
+      if (array[i] !== array[array.length - 1 - i]) {
+        return false;
+      }
     }
-    return sommenbr;
+    return true;
   }
 
-console.log(nombreentrer(123));
+console.log(palindrome([1, 2, 3, 2, 1]));
+console.log(palindrome([1, 2, 3, 4, 5]));
