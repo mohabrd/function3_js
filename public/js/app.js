@@ -22,10 +22,23 @@
 
 //EXO3
 
-function ordre(str) {
-    let animaux = ["girafe", "chien", "chat", "oiseau"];
-    let animauxtrier = animaux.sort();
-    return animauxtrier;
-}
+// function ordre(str) {
+//     let animaux = ["girafe", "chien", "chat", "oiseau"];
+//     let animauxtrier = animaux.sort();
+//     return animauxtrier;
+// }
 
-console.log(ordre());
+// console.log(ordre());
+
+//EXO4
+
+function nombreentrer(num) {
+    let sommenbr = 0;
+    let str = num.toString();
+    for (let i = 0; i < str.length; i++) {
+      sommenbr += parseInt(str[i]);
+    }
+    return sommenbr;
+  }
+
+console.log(nombreentrer(123));
